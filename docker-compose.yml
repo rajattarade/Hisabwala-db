@@ -20,19 +20,5 @@ services:
       timeout: 5s
       retries: 5
 
-  flyway:
-    image: flyway/flyway:11
-    container_name: hisabwala-flyway
-    depends_on:
-      postgres:
-        condition: service_healthy
-    command: >
-      -url=jdbc:postgresql://postgres:5432/${POSTGRES_DB}
-      -user=${POSTGRES_USER}
-      -password=${POSTGRES_PASSWORD}
-      migrate
-    volumes:
-      - ./migrations:/flyway/sql
-
 volumes:
   postgres_data:

@@ -1,16 +1,22 @@
 # Hisabwala-db
-Purpose: database repo for Hisabwala — holds container config, migrations, seed scripts, and infra-as-code.
 
-# How To Run
-`docker compose --env-file .env.example up --build`
+**Purpose:** Database repository for Hisabwala — contains container configuration, EF migrations, seed scripts, and infrastructure-as-code.
 
-# A fresh start 
-`docker compose down -v   # remove containers + volumes`
-`docker compose up --build # start fresh`
+---
 
+## 🚀 How to Run
 
-Stack:
-- Postgres 16 (container)
-- Flyway (SQL migrations)
-- Docker Compose (local)
-- Terraform (future: cloud infra)
+```bash
+docker compose --env-file .env.example up --build
+```
+
+---
+
+## 🧹 Fresh Start
+
+Remove existing containers and volumes, then start fresh:
+
+```bash
+docker compose down -v    # remove containers + volumes
+docker compose up --build  # start fresh
+```
