@@ -6,6 +6,7 @@ Purpose: database repo for Hisabwala — holds container config, migrations, see
 
 # A fresh start 
 `docker compose down -v   # remove containers + volumes`
+
 `docker compose up --build # start fresh`
 
 
