@@ -2,7 +2,7 @@
 Purpose: database repo for Hisabwala — holds container config, migrations, seed scripts, and infra-as-code.
 
 # How To Run
-`docker compose --env-file .env up --build`
+`docker compose --env-file .env.example up --build`
 
 # A fresh start 
 `docker compose down -v   # remove containers + volumes`
